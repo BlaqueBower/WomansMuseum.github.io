@@ -13,8 +13,8 @@
     <header class="hero">
       <h1>We Are Here!</h1>
       <p>
-        Experience the history of Women's sports and some of the achivements
-        they have had through out the years.
+        Experience the history of Women's sports and some of the achievements
+        they have had through the years.
       </p>
     </header>
 
@@ -23,79 +23,66 @@
       <h2>About the Museum</h2>
       <p>
         This online museum showcases a collection of historical moments for
-        females in the sports industy. As you go through the website you will
-        see how sports for woman grew overtime and on what scale it grew to.
+        females in the sports industry. As you go through the website, you will
+        see how sports for women grew over time and on what scale it grew to.
       </p>
     </section>
 
     <!-- Image and 3D Model Sections -->
     <main class="gallery">
       <!-- Section 1 -->
-      <div class="gallery-item">
-        <div class="description">
-          <h3>Sue Bird - 2012 Olympic Jersey</h3>
-          <model-viewer
-            src="artifact1.glb"
-            alt="Artifact 1 3D model"
-            ar
-            auto-rotate
-            camera-controls
-          ></model-viewer>
-          <div class="additional-images">
-            <img
-              src="./images/Sue_Bird_showcase-Front Camera.png"
-              alt="Artifact 1 Image 1"
-            />
-            <img
-              src="./images/Sue_Bird_showcase-Back Camera.png"
-              alt="Artifact 1 Image 2"
-            />
-            <img
-              src="./images/Sue_Bird_showcase-Side Camera.png"
-              alt="Artifact 1 Image 3"
-            />
-          </div>
-          <p>
-            Sue Bird is a legendary American professional basketball player,
-            widely considered one of the greatest women's basketball players of
-            all time. With a career spanning over two decades, primarily with
-            the Seattle Storm of the WNBA, she boasts a remarkable record of
-            four WNBA championships, five Olympic gold medals, and numerous
-            other accolades. Known for her exceptional court vision, precise
-            passing, and leadership, Bird's impact extends far beyond
-            statistics. She's a master playmaker, capable of orchestrating
-            offensive plays with unparalleled skill and composure. Beyond her
-            on-court achievements, Bird is admired for her unwavering
-            dedication, graceful demeanor, and advocacy for women's sports and
-            LGBTQ+ rights. She's a true icon, inspiring generations with her
-            talent, perseverance, and unwavering commitment to excellence.
-          </p>
-        </div>
+      <div class="timeline-item">
+        <span class="year">1958</span>
       </div>
 
-      <!-- Section 2 -->
       <div class="gallery-item">
         <div class="description">
           <h3>Althea Gibson's Tennis Racket</h3>
           <model-viewer
-            src="artifact2.glb"
-            alt="Artifact 2 3D model"
+            src="./models/nmah-1988_0260_06-100k-2048_std_draco.glb"
             ar
-            auto-rotate
+            ar-modes="webxr scene-viewer quick-look"
             camera-controls
-          ></model-viewer>
+            tone-mapping="neutral"
+            poster="./images/poster.webp"
+            shadow-intensity="1"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="0.00181789463892219m -0.2761710225067892m 0.017900459737759666m"
+              data-normal="0.02299015336523893m -0.03140096501916805m 0.9992424291652691m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                Althena Gibson's handle grip
+              </div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="0.003227081570500445m 0.04118111525927981m 0.014916174256086823m"
+              data-normal="0.06481466272605652m -0.031266149507668636m 0.9974073828635276m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Harry C. Lee &amp; Co Racket</div>
+            </button>
+          </model-viewer>
+
           <div class="additional-images">
             <img
               src="./images/Tennis_Racket-Front Camera.png"
-              alt="Artifact 2 Image 1"
+              alt="Front of Tennis Racket"
+              onclick="openModal(this)"
             />
             <img
               src="./images/Tennis_Racket-Back Camera.png"
-              alt="Artifact 2 Image 2"
+              alt="Back of Tennis Racket"
+              onclick="openModal(this)"
             />
             <img
               src="./images/Tennis_Racket-Side Camera.png"
-              alt="Artifact 2 Image 3"
+              alt="Side of Tennis Racket"
+              onclick="openModal(this)"
             />
           </div>
           <p>
@@ -132,29 +119,58 @@
         </div>
       </div>
 
-      <!-- Section 3 -->
+      <!-- Section 2 -->
+      <div class="timeline-item">
+        <span class="year">1996</span>
+      </div>
       <div class="gallery-item">
         <div class="description">
-          <h3>Dominique Dawes Gymnast Outfit</h3>
+          <h3>Dominique Dawes 1996 Gymnast Outfit</h3>
           <model-viewer
-            src="artifact3.glb"
-            alt="Artifact 3 3D model"
+            src="./models/NMAH-1996_0286_01-100k-4096_std.glb"
             ar
-            auto-rotate
+            ar-modes="webxr scene-viewer quick-look"
             camera-controls
-          ></model-viewer>
+            tone-mapping="neutral"
+            poster="./images/poster.png"
+            shadow-intensity="1"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-0.0063647741750702674m 0.2563659167675755m 0.05437335572048352m"
+              data-normal="-0.01919199260817056m 0.3901713501829085m 0.9205422233206764m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                Team USA 1996 Gymnast Leotard
+              </div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="0.22380762880667704m 0.22164200890796792m -0.01791128246110532m"
+              data-normal="0.9753009530035285m 0.20017012569291057m -0.09338078951526103m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Team USA 1996 Olympic Logo</div>
+            </button>
+          </model-viewer>
+
           <div class="additional-images">
             <img
               src="./images/Gymnast_Outfit_showcase-Front Camera.png"
-              alt="Artifact 3 Image 1"
+              alt="Front of Outfit"
+              onclick="openModal(this)"
             />
             <img
               src="./images/Gymnast_Outfit_showcase-Back Camera.png"
-              alt="Artifact 3 Image 2"
+              alt="Back of Outfit"
+              onclick="openModal(this)"
             />
             <img
               src="./images/Gymnast_Outfit_showcase-Side Camera.png"
-              alt="Artifact 3 Image 3"
+              alt="Side of Outfit"
+              onclick="openModal(this)"
             />
           </div>
           <p>
@@ -168,7 +184,84 @@
           </p>
         </div>
       </div>
+
+      <!-- Section 3 -->
+      <div class="timeline-item">
+        <span class="year">2012</span>
+      </div>
+      <div class="gallery-item">
+        <div class="description">
+          <h3>Sue Bird - 2012 Olympic Jersey</h3>
+          <model-viewer
+            src="./models/2012_0242_07_and_08-150k-4096_std.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="./images/poster.jpeg"
+            shadow-intensity="1"
+            exposure="1.57"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.010679146549105317m 0.21234486865690294m -0.11226888475447705m"
+              data-normal="-0.1431689813049081m 0.04043967800028364m -0.9888717182907742m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Jersey Number</div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-0.007513269886426699m 0.2492416866294041m 0.11345309501882417m"
+              data-normal="-0.027301311129922522m 0.12692728699432054m 0.9915362334412438m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">2012 USA Basketball Team Logo</div>
+            </button>
+          </model-viewer>
+          <div class="additional-images">
+            <img
+              src="./images/Sue_Bird_showcase-Front Camera.png"
+              alt="Front of Jersey"
+              onclick="openModal(this)"
+            />
+            <img
+              src="./images/Sue_Bird_showcase-Back Camera.png"
+              alt="Back of Jersey"
+              onclick="openModal(this)"
+            />
+            <img
+              src="./images/Sue_Bird_showcase-Side Camera.png"
+              alt="Side of Jersey"
+              onclick="openModal(this)"
+            />
+          </div>
+          <p>
+            Sue Bird is a legendary American professional basketball player,
+            widely considered one of the greatest women's basketball players of
+            all time. With a career spanning over two decades, primarily with
+            the Seattle Storm of the WNBA, she boasts a remarkable record of
+            four WNBA championships, five Olympic gold medals, and numerous
+            other accolades. Known for her exceptional court vision, precise
+            passing, and leadership, Bird's impact extends far beyond
+            statistics. She's a master playmaker, capable of orchestrating
+            offensive plays with unparalleled skill and composure. Beyond her
+            on-court achievements, Bird is admired for her unwavering
+            dedication, graceful demeanor, and advocacy for women's sports and
+            LGBTQ+ rights. She's a true icon, inspiring generations with her
+            talent, perseverance, and unwavering commitment to excellence.
+          </p>
+        </div>
+      </div>
     </main>
+
+    <!-- Modal for Image Popup -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
 
     <!-- Footer -->
     <footer>
